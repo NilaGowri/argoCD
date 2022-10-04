@@ -13,7 +13,7 @@ spec:
       provider:
         opsmx:
           gateUrl: https://isd-dev.argo-dev.opsmx.net/
-          application: qaargostackdriver1
+          application: argoqastackdriver1
           user: admin
           lifetimeHours: "0.05"
           baselineStartTime: "2022-09-16T06:10:00Z"
@@ -22,7 +22,7 @@ spec:
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: stacktemplate
+          - logTemplateName: logargoqastackdriver
             logScopeVariables: "resource.labels.container_name"
             baselineLogScope: "issuegen-prod"
             canaryLogScope: "issuegen-prod"
